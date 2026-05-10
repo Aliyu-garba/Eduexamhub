@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T89W78LJ3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2T89W78LJ3');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="EduExam Hub – Nigeria's most advanced exam preparation platform. Access WAEC, NECO, JAMB, NABTEB & Post UTME past questions, CBT practice, AI-powered learning, and student tools.">
+    <meta name="keywords"
+        content="WAEC past questions, NECO past questions, JAMB past questions, JAMB CBT practice, NABTEB past questions, Post UTME past questions, Nigerian exam preparation, AI learning, EduExam Hub, secondary school exams">
+    <meta name="author" content="EduExam Hub">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="EduExam Hub – Master WAEC, NECO & JAMB with AI-Powered Learning">
+    <meta property="og:description"
+        content="Access thousands of past questions, practice with real CBT simulations, and learn smarter with our AI assistant. Nigeria's #1 exam preparation platform.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eduexamhub.com">
+    <meta property="og:image" content="https://eduexamhub.com/og-image.jpg">
+    <meta property="og:locale" content="en_NG">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EduExam Hub – Master WAEC, NECO & JAMB">
+    <meta name="twitter:description"
+        content="Nigeria's most advanced exam preparation platform. Real CBT simulations, thousands of past questions, AI assistant & more.">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="canonical" href="https://eduexamhub.com">
+    <title>EduExam Hub | WAEC, NECO, JAMB Past Questions & CBT Practice</title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --primary-light: #3b82f6;
+            --primary-dark: #16213e;
+            --secondary: #059669;
+            --secondary-dark: #047857;
+            --accent: #7c3aed;
+            --accent-dark: #6d28d9;
+            --accent-cyan: #06b6d4;
+            --neutral-dark: #1f2937;
+            --neutral-light: #6b7280;
+            --neutral-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+            --gradient-hero: linear-gradient(135deg, #1a1a2e 0%, #16213e 30%, #0f2027 60%, #1a1a2e 100%);
+            --gradient-purple: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #6366f1 100%);
+            --gradient-cyan: linear-gradient(135deg, #06b6d4 0%, #22d3ee 50%, #3b82f6 100%);
+            --gradient-green: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+            --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+            --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.18), 0 8px 20px rgba(0, 0, 0, 0.08);
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --radius-full: 9999px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--neutral-bg);
+            color: var(--neutral-dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .academic-font {
+            font-family: 'Merriweather', serif;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* ============ HEADER & NAVIGATION ============ */
+        .header {
+            background: var(--gradient-hero);
+            box-shadow: 0 4px 24px rgba(26, 26, 46, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 0.65rem 0;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        /* Updated logo style to use img */
+        .logo-img {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 16px rgba(124, 58, 237, 0.3);
+            flex-shrink: 0;
+        }
+
+        .platform-name {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: white;
+            letter-spacing: -0.02em;
+            font-family: 'Poppins', sans-serif;
+            white-space: nowrap;
+        }
+        .platform-name .highlight {
+            color: #a78bfa;
+        }
+
+        .platform-subtitle {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 400;
+            letter-spacing: 0.03em;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85);
+            padding: 0.6rem 1.1rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .nav-link:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .nav-link.nav-highlight {
+            background: rgba(124, 58, 237, 0.25);
+            color: #c4b5fd;
+            font-weight: 600;
+        }
+        .nav-link.nav-highlight:hover {
+            background: rgba(124, 58, 237, 0.4);
+            color: white;
+        }
+
+        .mobile-menu-button {
+            display: none;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 12px;
+            padding: 0.65rem 0.8rem;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .mobile-menu-button:hover {
+            background: rgba(255, 255, 255, 0.22);
+            transform: scale(1.03);
+        }
+        .mobile-menu-button:active {
+            transform: scale(0.95);
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero-section {
+            background: var(--gradient-hero);
+            position: relative;
+            overflow: hidden;
+            padding: 4.5rem 1rem;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -150px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: floatParticle 12s ease-in-out infinite;
+        }
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: -120px;
+            left: -120px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.18) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: floatParticle 15s ease-in-out infinite reverse;
+        }
+        @keyframes floatParticle {
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+            25% {
+                transform: translate(50px, -30px) scale(1.08);
+            }
+            50% {
+                transform: translate(-20px, -60px) scale(0.94);
+            }
+            75% {
+                transform: translate(-40px, 15px) scale(1.04);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 7px 18px;
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.04em;
+        }
+        .hero-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+            font-weight: 900;
+            line-height: 1.12;
+            margin-bottom: 1.25rem;
+            color: white;
+            letter-spacing: -0.03em;
+        }
+        .hero-title .gradient-text {
+            background: var(--gradient-cyan);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .stat-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem 1.25rem;
+            text-align: center;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .stat-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.14);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: var(--shadow-xl);
+        }
+        .stat-number {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: white;
+            display: block;
+            line-height: 1;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .stat-number.gradient-cyan {
+            background: var(--gradient-cyan);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .stat-label {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.75);
+            margin-top: 0.4rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        /* ============ CONTENT CONTAINER ============ */
+        .content-container {
+            max-width: 1120px;
+            margin: 1.5rem auto 0;
+            padding: 1.5rem 1rem;
+        }
+
+        /* ============ SELECTION CARD ============ */
+        .selection-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            padding: 2.25rem;
+            margin: -3.5rem auto 1.5rem;
+            position: relative;
+            z-index: 10;
+            max-width: 780px;
+        }
+        .section-title {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: var(--neutral-dark);
+            margin-bottom: 0.35rem;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .section-subtitle {
+            color: var(--neutral-light);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        /* ============ FORM ELEMENTS ============ */
+        .form-group {
+            margin-bottom: 1.4rem;
+        }
+        .form-label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--neutral-dark);
+            margin-bottom: 0.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+        .form-select {
+            width: 100%;
+            padding: 0.9rem 1.1rem;
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            color: var(--neutral-dark);
+            background-color: var(--card-bg);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%237c3aed'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.4em;
+            appearance: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .form-select:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.08);
+        }
+
+        /* ============ BUTTONS ============ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0.9rem 1.8rem;
+            border-radius: var(--radius-md);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            gap: 0.6rem;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.01em;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .btn:active {
+            transform: scale(0.97);
+        }
+        .btn-primary {
+            background: var(--gradient-purple);
+            color: white;
+            box-shadow: 0 6px 20px rgba(124, 58, 237, 0.3);
+        }
+        .btn-primary:hover {
+            box-shadow: 0 10px 28px rgba(124, 58, 237, 0.45);
+        }
+        .btn-secondary {
+            background: var(--gradient-green);
+            color: white;
+            box-shadow: 0 6px 20px rgba(5, 150, 105, 0.3);
+        }
+        .btn-secondary:hover {
+            box-shadow: 0 10px 28px rgba(5, 150, 105, 0.45);
+        }
+        .btn-cyan {
+            background: var(--gradient-cyan);
+            color: #1a1a2e;
+            font-weight: 700;
+            box-shadow: 0 6px 20px rgba(6, 182, 212, 0.3);
+        }
+        .btn-cyan:hover {
+            box-shadow: 0 10px 28px rgba(6, 182, 212, 0.45);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--neutral-dark);
+            border: 2px solid var(--border-color);
+        }
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(124, 58, 237, 0.04);
+        }
+
+        /* ============ TOOLS & ASSISTANT GRID ============ */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1.75rem;
+        }
+        .tool-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem 1.25rem;
+            text-align: center;
+            border: 2px solid var(--border-color);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 145px;
+            text-decoration: none;
+            color: inherit;
+        }
+        .tool-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent);
+        }
+        .tool-icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.85rem;
+            font-size: 1.6rem;
+            color: white;
+            flex-shrink: 0;
+        }
+        .tool-icon-circle.tools-bg {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        .tool-icon-circle.ai {
+            background: var(--gradient-cyan);
+        }
+        .tool-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--neutral-dark);
+            margin-bottom: 0.3rem;
+            font-family: 'Poppins', sans-serif;
+        }
+        .tool-description {
+            color: var(--neutral-light);
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        /* ============ EXAM TYPE CARDS ============ */
+        .exam-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .exam-type-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem 1rem;
+            text-align: center;
+            border: 2px solid var(--border-color);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        .exam-type-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent);
+        }
+        .exam-type-card .exam-icon {
+            font-size: 2.2rem;
+            margin-bottom: 0.6rem;
+        }
+        .exam-type-card .exam-name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--neutral-dark);
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 0.2rem;
+        }
+        .exam-type-card .exam-count {
+            font-size: 0.75rem;
+            color: var(--neutral-light);
+        }
+
+        /* ============ RESOURCES SECTION ============ */
+        .resources-section {
+            background: linear-gradient(135deg, #f0f4ff 0%, #f8fafc 100%);
+            padding: 2.5rem 1rem;
+        }
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+        .resource-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .resource-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+        }
+        .resource-icon.purple {
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            color: var(--accent);
+        }
+        .resource-icon.cyan {
+            background: linear-gradient(135deg, #cffafe 0%, #a5f3fc 100%);
+            color: #0891b2;
+        }
+        .resource-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--neutral-dark);
+            margin-bottom: 0.6rem;
+            font-family: 'Poppins', sans-serif;
+        }
+        .resource-description {
+            color: var(--neutral-light);
+            margin-bottom: 1.25rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* ============ POPULAR SUBJECTS ============ */
+        .subjects-section {
+            padding: 3rem 1rem;
+            background: var(--card-bg);
+        }
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 1rem;
+            max-width: 1120px;
+            margin: 1.5rem auto 0;
+        }
+        .subject-card {
+            background: var(--neutral-bg);
+            border-radius: var(--radius-md);
+            padding: 1.35rem 1.25rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+        }
+        .subject-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: var(--shadow-md);
+        }
+        .subject-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-sm);
+            background: var(--gradient-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        .subject-name {
+            font-weight: 600;
+            color: var(--neutral-dark);
+            margin-bottom: 0.15rem;
+            font-size: 0.95rem;
+        }
+        .subject-exams {
+            font-size: 0.75rem;
+            color: var(--neutral-light);
+        }
+
+        /* ============ SOCIAL SECTION ============ */
+        .social-section {
+            background: var(--neutral-dark);
+            padding: 2.5rem 1rem;
+        }
+        .social-title {
+            color: white;
+            text-align: center;
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-bottom: 1.75rem;
+            font-family: 'Poppins', sans-serif;
+        }
+        .social-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: var(--radius-md);
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .social-link.whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        }
+        .social-link.tiktok {
+            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+        }
+        .social-link.facebook {
+            background: linear-gradient(135deg, #1877F2 0%, #0d5cb6 100%);
+        }
+        .social-link.instagram {
+            background: linear-gradient(135deg, #E4405F 0%, #C13584 100%);
+        }
+        .social-link.twitter {
+            background: linear-gradient(135deg, #1DA1F2 0%, #0d8bd9 100%);
+        }
+        .social-link.youtube {
+            background: linear-gradient(135deg, #FF0000 0%, #cc0000 100%);
+        }
+        .social-link.telegram {
+            background: linear-gradient(135deg, #26A5E4 0%, #1e8bc3 100%);
+        }
+        .social-link:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ============ FOOTER ============ */
+        .footer {
+            background: #111827;
+            color: white;
+            padding: 3.5rem 1rem 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2.5rem;
+            max-width: 1120px;
+            margin: 0 auto 2.5rem;
+        }
+        .footer-column-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.85rem;
+        }
+        .footer-links {
+            list-style: none;
+        }
+        .footer-link {
+            color: #d1d5db;
+            text-decoration: none;
+            margin-bottom: 0.6rem;
+            display: block;
+            transition: color 0.3s ease;
+            font-size: 0.85rem;
+        }
+        .footer-link:hover {
+            color: #a78bfa;
+        }
+        .footer-info {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.6rem;
+            color: #d1d5db;
+            font-size: 0.85rem;
+        }
+        .footer-info a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-info a:hover {
+            color: #a78bfa;
+        }
+        .footer-disclaimer {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding-top: 1.75rem;
+            border-top: 1px solid #374151;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            color: #9ca3af;
+            font-size: 0.8rem;
+        }
+
+        /* ============ WHATSAPP BANNER ============ */
+        .whatsapp-banner {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            max-width: 380px;
+            width: 90%;
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            z-index: 9999;
+            border: 1px solid #e0e0e0;
+            overflow: hidden;
+            animation: slideInUp 0.5s ease-out;
+            display: none;
+        }
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .banner-content {
+            display: flex;
+            align-items: center;
+            padding: 14px;
+            gap: 10px;
+        }
+        .banner-icon-wa {
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+        }
+        .banner-text {
+            flex-grow: 1;
+        }
+        .banner-title {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 2px;
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+        .banner-subtitle {
+            color: #6b7280;
+            font-size: 0.78rem;
+            line-height: 1.3;
+        }
+        .banner-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        .banner-button {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 7px 14px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(37, 211, 102, 0.2);
+        }
+        .banner-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(37, 211, 102, 0.3);
+        }
+        .banner-close {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #f3f4f6;
+            border: none;
+            color: #6b7280;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+        .banner-close:hover {
+            background: #e5e7eb;
+            color: var(--neutral-dark);
+        }
+
+        /* ============ OFFLINE MESSAGE ============ */
+        #offlineMessage {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.95);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        .offline-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            max-width: 380px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        /* ============ MOBILE NAV MENU ============ */
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.8rem;
+                margin-top: 2rem;
+            }
+            .stat-card {
+                padding: 1rem 0.6rem;
+                border-radius: var(--radius-md);
+            }
+            .stat-number {
+                font-size: 1.6rem;
+            }
+            .stat-label {
+                font-size: 0.65rem;
+            }
+
+            .mobile-menu-button {
+                display: block;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(18, 28, 46, 0.98);
+                backdrop-filter: blur(20px);
+                border-radius: 0 0 24px 24px;
+                box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
+                padding: 1.5rem 1rem;
+                display: none;
+                flex-direction: column;
+                z-index: 1000;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                border-top: none;
+                gap: 0.5rem;
+            }
+            .nav-menu.active {
+                display: flex;
+                animation: slideDownFade 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            }
+            @keyframes slideDownFade {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            .nav-link {
+                color: white;
+                padding: 0.85rem 1.1rem;
+                border-radius: 14px;
+                font-size: 0.9rem;
+                font-weight: 550;
+                text-align: left;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                transition: all 0.25s ease;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .nav-link:hover {
+                background: rgba(255, 255, 255, 0.15);
+                transform: translateX(4px);
+                border-color: rgba(255, 255, 255, 0.3);
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            .hero-section {
+                padding: 3.5rem 0.75rem;
+            }
+            .selection-card {
+                padding: 1.75rem;
+                margin: -2.5rem auto 1.5rem;
+                border-radius: var(--radius-lg);
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+            .subjects-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.6rem;
+            }
+            .subject-card {
+                padding: 1rem 0.8rem;
+                gap: 0.6rem;
+            }
+            .subject-icon {
+                width: 38px;
+                height: 38px;
+                font-size: 1rem;
+            }
+            .subject-name {
+                font-size: 0.8rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+            .whatsapp-banner {
+                top: 65px;
+                right: 8px;
+                left: 8px;
+                width: auto;
+                max-width: none;
+            }
+            .tools-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+            .exam-cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.65rem;
+            }
+            .hero-subtitle {
+                font-size: 0.9rem;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+            .stat-number {
+                font-size: 1.3rem;
+            }
+            .stat-label {
+                font-size: 0.6rem;
+            }
+            .section-title {
+                font-size: 1.35rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+            .subjects-grid {
+                grid-template-columns: 1fr;
+            }
+            .exam-cards-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .whatsapp-banner {
+                top: 60px;
+                right: 4px;
+                left: 4px;
+            }
+            .banner-content {
+                padding: 10px;
+                gap: 8px;
+            }
+            .banner-icon-wa {
+                width: 36px;
+                height: 36px;
+                font-size: 1.1rem;
+            }
+            .banner-title {
+                font-size: 0.8rem;
+            }
+            .banner-subtitle {
+                font-size: 0.7rem;
+            }
+            .nav-menu {
+                padding: 1.25rem 0.75rem;
+            }
+            .nav-link {
+                padding: 0.75rem 0.9rem;
+                font-size: 0.85rem;
+            }
+            .selection-card {
+                padding: 1.25rem;
+                margin: -2rem auto 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Offline Message -->
+    <div id="offlineMessage">
+        <div class="offline-content">
+            <div class="text-rose-500 text-5xl mb-4">
+                <i class="fas fa-wifi"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">No Internet Connection</h2>
+            <p class="text-gray-600 mb-4">Please connect to the internet to continue using EduExam Hub.</p>
+            <div class="text-gray-400 text-sm">
+                <p>This platform requires an internet connection to function properly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="content-container" style="padding: 0 1rem;">
+            <div class="flex justify-between items-center">
+                <div class="logo-container">
+                    <!-- Updated logo to use img tag -->
+                    <img src="logo.jpg" alt="EduExam Hub Logo" class="logo-img">
+                    <div>
+                        <div class="platform-name">EduExam<span class="highlight">Hub</span></div>
+                        <div class="platform-subtitle">Powered by AGI Innovations</div>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-button" onclick="toggleMenu()" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-white text-xl"></i>
+                </button>
+
+                <nav id="navMenu" class="nav-menu">
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> About Us
+                    </a>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                    <a href="blog.html" class="nav-link">
+                        <i class="fas fa-blog"></i> Blog & Strategies
+                    </a>
+                    <a href="scholarships.html" class="nav-link">
+                        <i class="fas fa-graduation-cap"></i> Scholarships
+                    </a>
+                    <a href="freshers-guide.html" class="nav-link">
+                        <i class="fas fa-compass"></i> JAMB Guide
+                    </a>
+                    <a href="students-tools.html" class="nav-link">
+                        <i class="fas fa-tools"></i> Student Tools
+                    </a>
+                    <a href="chatbot.html" class="nav-link nav-highlight">
+                        <i class="fas fa-robot"></i> EduAI Assistant
+                    </a>
+                    <a href="cbt-practice.html" class="nav-link nav-highlight">
+                        <i class="fas fa-desktop"></i> CBT Practice
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content text-center">
+            <div class="hero-badge">🇳🇬 Nigeria's #1 AI-Powered Exam Prep Platform</div>
+            <h1 class="hero-title academic-font">
+                Master <span class="gradient-text">WAEC, NECO & JAMB</span> With Confidence
+            </h1>
+            <p class="hero-subtitle">
+                Access thousands of past questions, practice with real CBT simulations, and learn smarter
+                with our intelligent AI assistant — all in one powerful platform.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number gradient-cyan">85K+</span>
+                    <span class="stat-label">Past Questions</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number gradient-cyan">500K+</span>
+                    <span class="stat-label">Active Students</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number gradient-cyan">1.2M+</span>
+                    <span class="stat-label">CBT Exams Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number gradient-cyan">94%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Selection Card -->
+        <div class="content-container">
+            <div class="selection-card">
+                <h2 class="section-title">Find Your Past Questions</h2>
+                <p class="section-subtitle">Select your exam type and subject to access relevant past questions instantly.</p>
+
+                <!-- Updated: only two dropdowns, matching the provided logic -->
+                <div class="form-group">
+                    <label for="examType" class="form-label">Exam Type</label>
+                    <select id="examType" class="form-select">
+                        <option value="">-- Choose Exam Type --</option>
+                        <option value="waec">WAEC</option>
+                        <option value="neco">NECO</option>
+                        <option value="jamb">JAMB</option>
+                        <option value="materials">Study Materials</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject</label>
+                    <select id="subject" class="form-select">
+                        <option value="">-- Choose Subject --</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="english">English</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="biology">Biology</option>
+                        <option value="further_mathematics">Further Mathematics</option>
+                        <option value="geography">Geography</option>
+                        <option value="economics">Economics</option>
+                        <option value="government">Government</option>
+                        <option value="literature">Literature</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="accounting">Accounting</option>
+                    </select>
+                </div>
+
+                <button id="proceedBtn" class="btn btn-primary" style="margin-top: 1.75rem;" onclick="redirectToQuestions()">
+                    <i class="fas fa-arrow-right"></i>
+                    Access Resources
+                </button>
+
+                <!-- Quick Action Tools Grid - replaced CBT with Student Tools -->
+                <div class="tools-grid">
+                    <div class="tool-card" onclick="window.location.href='students-tools.html'">
+                        <div class="tool-icon-circle tools-bg">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4 class="tool-title">Student Tools</h4>
+                        <p class="tool-description">GPA & CGPA calculators, study planner, and more</p>
+                    </div>
+                    <div class="tool-card" onclick="window.location.href='chatbot.html'">
+                        <div class="tool-icon-circle ai">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4 class="tool-title">EduAI Assistant</h4>
+                        <p class="tool-description">AI-powered explanations, summaries & study tips</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exam Type Quick Cards (unchanged) -->
+            <div class="exam-cards-grid" style="max-width: 780px; margin: 0 auto 1rem;">
+                <div class="exam-type-card" onclick="document.getElementById('examType').value='waec'">
+                    <div class="exam-icon">📘</div>
+                    <div class="exam-name">WAEC</div>
+                    <div class="exam-count">25,000+ Questions</div>
+                </div>
+                <div class="exam-type-card" onclick="document.getElementById('examType').value='neco'">
+                    <div class="exam-icon">📗</div>
+                    <div class="exam-name">NECO</div>
+                    <div class="exam-count">20,000+ Questions</div>
+                </div>
+                <div class="exam-type-card" onclick="document.getElementById('examType').value='jamb'">
+                    <div class="exam-icon">🎯</div>
+                    <div class="exam-name">JAMB</div>
+                    <div class="exam-count">30,000+ Questions</div>
+                </div>
+                <div class="exam-type-card" onclick="document.getElementById('examType').value='materials'">
+                    <div class="exam-icon">📚</div>
+                    <div class="exam-name">Study Materials</div>
+                    <div class="exam-count">Guides & Notes</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources / Tutorials Section -->
+        <section class="resources-section">
+            <div class="content-container" style="margin-top: 0; padding-top: 0;">
+                <h2 class="section-title">Exam Preparation Resources</h2>
+                <p class="section-subtitle">Comprehensive study materials, CBT practice tests, and AI-powered learning tools</p>
+                <div class="resources-grid">
+                    <!-- Swapped: JAMB CBT Bootcamp now first -->
+                    <div class="resource-card">
+                        <div class="resource-icon cyan">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3 class="resource-title">JAMB CBT Bootcamp</h3>
+                        <p class="resource-description">Realistic JAMB CBT simulations with timed practice, instant scoring, performance analytics, and 70+ complete mock exams.</p>
+                        <button onclick="window.location.href='cbt-practice.html'" class="btn btn-cyan">
+                            <i class="fas fa-rocket"></i> Start CBT Practice
+                        </button>
+                    </div>
+                    <!-- WAEC & NECO Study Guides now second -->
+                    <div class="resource-card">
+                        <div class="resource-icon purple">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="resource-title">WAEC & NECO Study Guides</h3>
+                        <p class="resource-description">Topic-by-topic breakdowns, solved past questions, and expert tips for scoring A's and B's in your WAEC and NECO examinations.</p>
+                        <button onclick="window.location.href='study-guides.html'" class="btn btn-primary">
+                            <i class="fas fa-play-circle"></i> Access Study Guides
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Subjects Section (unchanged) -->
+        <section class="subjects-section">
+            <div class="content-container" style="margin-top: 0; padding-top: 0;">
+                <h2 class="section-title">Popular Subjects</h2>
+                <p class="section-subtitle">Browse past questions from the most studied subjects across all exam types</p>
+                <div class="subjects-grid">
+                    <div class="subject-card" onclick="document.getElementById('subject').value='mathematics'">
+                        <div class="subject-icon"><i class="fas fa-calculator"></i></div>
+                        <div>
+                            <h4 class="subject-name">Mathematics</h4>
+                            <p class="subject-exams">WAEC · NECO · JAMB</p>
+                        </div>
+                    </div>
+                    <div class="subject-card" onclick="document.getElementById('subject').value='english'">
+                        <div class="subject-icon" style="background: var(--gradient-cyan);"><i class="fas fa-book"></i></div>
+                        <div>
+                            <h4 class="subject-name">English Language</h4>
+                            <p class="subject-exams">WAEC · NECO · JAMB</p>
+                        </div>
+                    </div>
+                    <div class="subject-card" onclick="document.getElementById('subject').value='physics'">
+                        <div class="subject-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);"><i class="fas fa-atom"></i></div>
+                        <div>
+                            <h4 class="subject-name">Physics</h4>
+                            <p class="subject-exams">WAEC · NECO · JAMB</p>
+                        </div>
+                    </div>
+                    <div class="subject-card" onclick="document.getElementById('subject').value='chemistry'">
+                        <div class="subject-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);"><i class="fas fa-flask"></i></div>
+                        <div>
+                            <h4 class="subject-name">Chemistry</h4>
+                            <p class="subject-exams">WAEC · NECO · JAMB</p>
+                        </div>
+                    </div>
+                    <div class="subject-card" onclick="document.getElementById('subject').value='biology'">
+                        <div class="subject-icon" style="background: linear-gradient(135deg, #10b981, #059669);"><i class="fas fa-leaf"></i></div>
+                        <div>
+                            <h4 class="subject-name">Biology</h4>
+                            <p class="subject-exams">WAEC · NECO · JAMB</p>
+                        </div>
+                    </div>
+                    <div class="subject-card" onclick="document.getElementById('subject').value='economics'">
+                        <div class="subject-icon" style="background: linear-gradient(135deg, #6366f1, #4f46e5);"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <h4 class="subject-name">Economics</h4>
+                            <p class="subject-exams">WAEC · NECO · JAMB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <button onclick="document.getElementById('subject').scrollIntoView({behavior: 'smooth'})"
+                    class="btn btn-outline w-auto px-8 mx-auto inline-flex" style="width: auto;">
+                    View All Subjects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <h3 class="social-title">Connect With EduExam Hub</h3>
+        <div class="social-grid">
+            <a href="https://whatsapp.com/channel/" target="_blank" class="social-link whatsapp" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://tiktok.com/" target="_blank" class="social-link tiktok" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://facebook.com/" target="_blank" class="social-link facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank" class="social-link instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/" target="_blank" class="social-link twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://youtube.com/" target="_blank" class="social-link youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://t.me/" target="_blank" class="social-link telegram" aria-label="Telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div>
+            <h4 class="footer-column-title">Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="about.html" class="footer-link">About Us</a></li>
+                <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                <li><a href="freshers-guide.html" class="footer-link">JAMB Preparation Guide</a></li>
+                <li><a href="blog.html" class="footer-link">Blog & Exam Strategies</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="footer-column-title">Exam Resources</h4>
+            <ul class="footer-links">
+                <li><a href="#" class="footer-link">WAEC Past Questions</a></li>
+                <li><a href="#" class="footer-link">NECO Past Questions</a></li>
+                <li><a href="#" class="footer-link">JAMB Past Questions</a></li>
+                <li><a href="#" class="footer-link">Post UTME Questions</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="footer-column-title">Tools & Features</h4>
+            <ul class="footer-links">
+                <li><a href="scholarships.html" class="footer-link">Scholarships</a></li>
+                <li><a href="students-tools.html" class="footer-link">Students Tools</a></li>
+                <li><a href="eduai.html" class="footer-link">EduAI Assistant</a></li>
+                <li><a href="jamb.html" class="footer-link">JAMB CBT Practice</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="footer-column-title">Contact & Legal</h4>
+            <div class="footer-info">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@eduexamhub.com">Support@Eduexamhub</a>
+            </div>
+            <div class="footer-info">
+                <i class="fas fa-phone"></i>
+                <span>+234 8133376629</span>
+            </div>
+            <ul class="footer-links mt-3">
+                <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                <li><a href="disclaimer.html" class="footer-link">Disclaimer</a></li>
+                <li><a href="privacy.html" class="footer-link">Privacy & Policy</a></li>
+                <li><a href="trrms.html" class="footer-link">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-disclaimer">
+        EduExam Hub is an independent educational platform and is not officially affiliated with WAEC, NECO, JAMB, NABTEB, or any examination body. All materials are provided for educational and revision purposes only. Past questions are sourced from publicly available resources and student contributions.
+    </div>
+    <div class="copyright">
+        © 2026 EduExam Hub.| All Rights Reserved.
+    </div>
+</footer>
+
+<!-- WhatsApp Banner -->
+<div id="whatsappBanner" class="whatsapp-banner">
+    <div class="banner-content">
+        <div class="banner-icon-wa">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="banner-text">
+            <p class="banner-title">Get exam updates & new past questions!</p>
+            <p class="banner-subtitle">Join our official EduExam Hub WhatsApp Channel.</p>
+        </div>
+        <div class="banner-actions">
+            <a href="https://whatsapp.com/channel/" target="_blank" class="banner-button">
+                Join Channel
+            </a>
+            <button id="closeBanner" class="banner-close" aria-label="Close notification">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ============ INTERNET CONNECTION CHECK ============
+    window.addEventListener('load', function() {
+        checkInternetConnection();
+        window.addEventListener('online', function() {
+            document.getElementById('offlineMessage').style.display = 'none';
+            enablePageFunctionality(true);
+        });
+        window.addEventListener('offline', function() {
+            showOfflineMessage();
+            enablePageFunctionality(false);
+        });
+    });
+
+    function checkInternetConnection() {
+        if (!navigator.onLine) {
+            showOfflineMessage();
+            enablePageFunctionality(false);
+        }
+    }
+
+    function showOfflineMessage() {
+        document.getElementById('offlineMessage').style.display = 'flex';
+    }
+
+    function enablePageFunctionality(enable) {
+        const interactiveElements = document.querySelectorAll('button, select, a');
+        interactiveElements.forEach(element => {
+            if (enable) {
+                element.removeAttribute('disabled');
+                element.style.pointerEvents = 'auto';
+                element.style.opacity = '1';
+            } else {
+                element.setAttribute('disabled', 'disabled');
+                element.style.pointerEvents = 'none';
+                element.style.opacity = '0.7';
+            }
+        });
+    }
+
+    // ============ MOBILE MENU TOGGLE ============
+    function toggleMenu() {
+        const navMenu = document.getElementById('navMenu');
+        navMenu.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function(event) {
+        const navMenu = document.getElementById('navMenu');
+        const menuButton = document.querySelector('.mobile-menu-button');
+        if (!navMenu.contains(event.target) && !menuButton.contains(event.target)) {
+            navMenu.classList.remove('active');
+        }
+    });
+
+    // Close mobile menu on Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            document.getElementById('navMenu').classList.remove('active');
+        }
+    });
+
+    // ============ UPDATED REDIRECT LOGIC (from provided code) ============
+    function redirectToQuestions() {
+        const examType = document.getElementById('examType').value;
+        const subject = document.getElementById('subject').value;
+        const button = document.getElementById('proceedBtn');
+        
+        if (examType && subject) {
+            // Show loading state
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+            button.disabled = true;
+            
+            // Redirect after brief delay for visual feedback
+            setTimeout(() => {
+                window.location.href = 'questions.html?exam=' + examType + '&subject=' + subject;
+            }, 800);
+        } else {
+            // Visual error feedback
+            if (!examType) {
+                document.getElementById('examType').style.borderColor = '#f43f5e';
+                document.getElementById('examType').focus();
+            }
+            if (!subject) {
+                document.getElementById('subject').style.borderColor = '#f43f5e';
+                document.getElementById('subject').focus();
+            }
+            
+            alert('Please select both exam type and subject to continue.');
+            
+            // Reset border colors after 2 seconds
+            setTimeout(() => {
+                document.getElementById('examType').style.borderColor = '';
+                document.getElementById('subject').style.borderColor = '';
+            }, 2000);
+            
+            // Reset button state if it was clicked without selection
+            button.innerHTML = '<i class="fas fa-arrow-right"></i> Access Resources';
+            button.disabled = false;
+        }
+    }
+
+    // Reset button states on page load (to fix back/forward navigation issues)
+    document.addEventListener('DOMContentLoaded', function() {
+        resetButtonStates();
+    });
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            resetButtonStates();
+        }
+    });
+    function resetButtonStates() {
+        const button = document.getElementById('proceedBtn');
+        if (button) {
+            button.innerHTML = '<i class="fas fa-arrow-right"></i> Access Resources';
+            button.disabled = false;
+        }
+    }
+
+    // ============ WHATSAPP BANNER ============
+    document.addEventListener('DOMContentLoaded', function() {
+        const whatsappBanner = document.getElementById('whatsappBanner');
+        const closeBannerBtn = document.getElementById('closeBanner');
+        const bannerClosed = sessionStorage.getItem('eduExamWhatsappBannerClosed');
+
+        if (!bannerClosed && navigator.onLine) {
+            setTimeout(() => {
+                whatsappBanner.style.display = 'block';
+            }, 1800);
+        }
+
+        if (closeBannerBtn) {
+            closeBannerBtn.addEventListener('click', function() {
+                whatsappBanner.style.display = 'none';
+                sessionStorage.setItem('eduExamWhatsappBannerClosed', 'true');
+            });
+        }
+
+        window.addEventListener('offline', function() {
+            whatsappBanner.style.display = 'none';
+        });
+
+        window.addEventListener('online', function() {
+            if (!sessionStorage.getItem('eduExamWhatsappBannerClosed')) {
+                whatsappBanner.style.display = 'block';
+            }
+        });
+    });
+
+    // ============ SMOOTH SCROLL FOR ANCHOR LINKS ============
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            }
+        });
+    });
+
+    console.log('%c🎓 EduExam Hub %cLoaded Successfully',
+        'font-weight:900;font-size:1.2rem;color:#7c3aed;',
+        'font-weight:500;');
+    console.log('%cNigeria\'s #1 AI-Powered Exam Preparation Platform 🇳🇬',
+        'font-style:italic;color:#6b7280;');
+</script>
+</body>
+</html>
