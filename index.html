@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduExam Hub | WAEC, NECO & JAMB Success</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy-900: #060f1e;
+            --navy-800: #0a1929;
+            --navy-700: #0f1f38;
+            --navy-600: #152544;
+            --navy-500: #1a3056;
+            --navy-400: #1e3a66;
+            --gold: #c8943e;
+            --gold-light: #d9b155;
+            --gold-pale: #f3e5c9;
+            --gold-glow: #e8c876;
+            --white: #ffffff;
+            --off-white: #f9fafb;
+            --gray-50: #f6f7f9;
+            --gray-100: #eef0f4;
+            --gray-200: #e0e3e9;
+            --gray-300: #c8cdd6;
+            --gray-400: #9ba2af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5059;
+            --gray-700: #2d3138;
+            --gray-800: #1a1d24;
+            --shadow-xs: 0 1px 2px rgba(6, 15, 30, 0.04);
+            --shadow-sm: 0 1px 3px rgba(6, 15, 30, 0.05), 0 1px 2px rgba(6, 15, 30, 0.03);
+            --shadow: 0 4px 6px rgba(6, 15, 30, 0.04), 0 2px 4px rgba(6, 15, 30, 0.03);
+            --shadow-md: 0 8px 16px rgba(6, 15, 30, 0.05), 0 4px 8px rgba(6, 15, 30, 0.04);
+            --shadow-lg: 0 16px 32px rgba(6, 15, 30, 0.06), 0 8px 16px rgba(6, 15, 30, 0.04);
+            --shadow-xl: 0 24px 48px rgba(6, 15, 30, 0.08), 0 12px 24px rgba(6, 15, 30, 0.05);
+            --shadow-gold: 0 8px 32px rgba(200, 148, 62, 0.25);
+            --shadow-gold-lg: 0 16px 48px rgba(200, 148, 62, 0.35);
+            --radius-sm: 8px;
+            --radius: 12px;
+            --radius-md: 14px;
+            --radius-lg: 18px;
+            --radius-xl: 22px;
+            --radius-2xl: 28px;
+            --transition-fast: 0.2s cubic-bezier(0.32, 0.72, 0, 1);
+            --transition: 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+            --transition-slow: 0.5s cubic-bezier(0.32, 0.72, 0, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.65;
+            color: var(--gray-700);
+            background-color: var(--white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 16px;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Outfit', 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.025em;
+            color: var(--gray-800);
+        }
+        h1 {
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            font-weight: 900;
+        }
+        h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            font-weight: 800;
+        }
+        h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+        }
+        .container {
+            width: 100%;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* ── Buttons ────────────────────── */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 14px 32px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+            font-family: 'Inter', sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, #b8812e 100%);
+            color: #1a0e00;
+            box-shadow: var(--shadow-gold);
+            font-weight: 700;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold-lg);
+            filter: brightness(1.06);
+        }
+        .btn-primary:active {
+            transform: translateY(-1px);
+            filter: brightness(0.96);
+        }
+        .btn-outline-light {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.55);
+            color: #ffffff;
+        }
+        .btn-outline-light:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.85);
+            transform: translateY(-3px);
+        }
+        .btn-white {
+            background: #ffffff;
+            color: var(--navy-800);
+            font-weight: 700;
+            box-shadow: var(--shadow);
+        }
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            color: var(--navy-900);
+        }
+        .btn-lg {
+            padding: 17px 38px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .btn-sm {
+            padding: 10px 22px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* ── Header ────────────────────── */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition);
+            padding: 0;
+        }
+        .site-header .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 0;
+            transition: var(--transition);
+        }
+        .site-header.scrolled {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+        .site-header.scrolled .header-inner {
+            padding: 10px 0;
+        }
+        .logo-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            transition: var(--transition-fast);
+            flex-shrink: 0;
+        }
+        .logo-link:hover {
+            transform: scale(1.03);
+        }
+        .logo-img {
+            height: 42px;
+            width: auto;
+            border-radius: 8px;
+            transition: var(--transition);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+        .site-header.scrolled .logo-img {
+            height: 36px;
+        }
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--white);
+            letter-spacing: -0.02em;
+            transition: var(--transition);
+        }
+        .site-header.scrolled .logo-text {
+            color: var(--navy-800);
+        }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+        .header-register-btn {
+            padding: 10px 24px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border-radius: 50px;
+            background: var(--gold);
+            color: #1a0e00;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 2px 12px rgba(200, 148, 62, 0.3);
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+        }
+        .header-register-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(200, 148, 62, 0.4);
+            filter: brightness(1.05);
+        }
+        .site-header.scrolled .header-register-btn {
+            box-shadow: 0 2px 12px rgba(200, 148, 62, 0.35);
+        }
+
+        /* ── Hero ──────────────────────── */
+        .hero {
+            padding: 150px 0 100px;
+            background: var(--navy-900);
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+            color: #ffffff;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 70% 55% at 25% 80%, rgba(200, 148, 62, 0.1) 0%, transparent 55%),
+                radial-gradient(ellipse 55% 65% at 80% 15%, rgba(200, 148, 62, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse 45% 45% at 55% 50%, rgba(255, 255, 255, 0.015) 0%, transparent 65%);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .hero-grid-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.025;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+            background-size: 50px 50px;
+            mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 70%);
+        }
+        /* Hero bottom curve removed – clean straight edge now */
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 720px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold-light);
+            background: rgba(200, 148, 62, 0.12);
+            border: 1px solid rgba(200, 148, 62, 0.25);
+            padding: 7px 18px;
+            border-radius: 50px;
+            margin-bottom: 24px;
+        }
+        .hero h1 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
+            line-height: 1.1;
+        }
+        .hero .highlight {
+            display: inline-block;
+            position: relative;
+            color: var(--gold-glow);
+        }
+        .hero .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+            opacity: 0.5;
+        }
+        .hero p {
+            font-size: 1.12rem;
+            margin-bottom: 36px;
+            opacity: 0.85;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+            font-weight: 400;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ── Stats Strip ───────────────── */
+        .stats-strip {
+            padding: 0;
+            margin-top: -30px;
+            position: relative;
+            z-index: 3;
+        }
+        .stats-strip .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            background: #ffffff;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            border: 1px solid var(--gray-100);
+        }
+        .stat-block {
+            text-align: center;
+            padding: 28px 20px;
+            position: relative;
+            transition: var(--transition);
+        }
+        .stat-block:hover {
+            background: var(--gray-50);
+        }
+        .stat-block+.stat-block::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background: var(--gray-200);
+        }
+        .stat-number {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--navy-800);
+            letter-spacing: -0.03em;
+            margin-bottom: 2px;
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--gray-500);
+            letter-spacing: -0.01em;
+        }
+
+        /* ── Sections ──────────────────── */
+        .section {
+            padding: 90px 0;
+            position: relative;
+        }
+        .section-alt {
+            background: var(--gray-50);
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+        .section-tag {
+            display: inline-block;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            color: var(--gold);
+            background: rgba(200, 148, 62, 0.08);
+            padding: 6px 16px;
+            border-radius: 50px;
+            margin-bottom: 14px;
+        }
+        .section-header h2 {
+            color: var(--navy-800);
+            margin-bottom: 10px;
+        }
+        .section-header .section-underline {
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            margin: 16px auto 0;
+            border-radius: 4px;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray-500);
+            max-width: 580px;
+            margin: 0 auto 56px;
+            font-size: 1.02rem;
+            line-height: 1.7;
+        }
+
+        /* ── About ─────────────────────── */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 56px;
+            align-items: center;
+        }
+        .about-text h3 {
+            font-size: 1.6rem;
+            color: var(--navy-800);
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+        .about-text p {
+            color: var(--gray-600);
+            margin-bottom: 16px;
+            line-height: 1.75;
+            font-size: 0.98rem;
+        }
+        .about-features-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 10px;
+        }
+        .about-features-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: var(--gray-600);
+            font-size: 0.93rem;
+            line-height: 1.6;
+            padding: 8px 0;
+        }
+        .about-features-list li .check-icon {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+            background: rgba(200, 148, 62, 0.12);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 0.7rem;
+            margin-top: 2px;
+        }
+        .about-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .about-card-stack {
+            position: relative;
+            width: 100%;
+            max-width: 420px;
+            aspect-ratio: 1 / 1.1;
+        }
+        .about-floating-card {
+            background: #ffffff;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            padding: 28px 24px;
+            border: 1px solid var(--gray-100);
+            position: absolute;
+            transition: var(--transition);
+        }
+        .about-floating-card.card-main {
+            top: 5%;
+            left: 5%;
+            width: 75%;
+            z-index: 3;
+            text-align: center;
+        }
+        .about-floating-card.card-main .big-icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+        }
+        .about-floating-card.card-main h4 {
+            font-size: 1.2rem;
+            color: var(--navy-800);
+            margin-bottom: 4px;
+        }
+        .about-floating-card.card-main p {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+        }
+        .about-floating-card.card-secondary {
+            bottom: 8%;
+            right: 5%;
+            width: 55%;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .about-floating-card.card-secondary .mini-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: rgba(200, 148, 62, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .about-floating-card.card-tertiary {
+            top: 35%;
+            right: 0;
+            width: 40%;
+            z-index: 1;
+            text-align: center;
+            padding: 18px 14px;
+        }
+        .about-floating-card.card-tertiary .grade-badge {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        /* ── Features ──────────────────── */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .feature-card {
+            background: #ffffff;
+            padding: 40px 28px 34px;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid var(--gray-100);
+            position: relative;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: rgba(200, 148, 62, 0.2);
+        }
+        .feature-icon-circle {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(200, 148, 62, 0.1) 0%, rgba(200, 148, 62, 0.04) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--gold);
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+        .feature-card:hover .feature-icon-circle {
+            background: linear-gradient(135deg, var(--gold) 0%, #b8812e 100%);
+            color: #ffffff;
+            transform: scale(1.06);
+        }
+        .feature-card h3 {
+            font-size: 1.15rem;
+            color: var(--navy-800);
+            margin: 0;
+            letter-spacing: -0.015em;
+        }
+        .feature-card p {
+            color: var(--gray-500);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ── Exam Tabs ─────────────────── */
+        .exam-tabs-nav {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 36px;
+            background: var(--gray-100);
+            border-radius: 60px;
+            padding: 6px;
+            max-width: 440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .exam-tab-btn {
+            padding: 13px 28px;
+            font-weight: 600;
+            cursor: pointer;
+            color: var(--gray-500);
+            transition: var(--transition-fast);
+            border-radius: 60px;
+            font-size: 0.9rem;
+            letter-spacing: -0.01em;
+            flex: 1;
+            text-align: center;
+            white-space: nowrap;
+            border: none;
+            background: transparent;
+            font-family: 'Inter', sans-serif;
+        }
+        .exam-tab-btn.active {
+            color: #ffffff;
+            background: var(--navy-800);
+            box-shadow: var(--shadow-md);
+        }
+        .exam-tab-btn:hover:not(.active) {
+            color: var(--navy-800);
+            background: rgba(15, 31, 56, 0.05);
+        }
+        .exam-panel {
+            display: none;
+            animation: fadeSlideIn 0.45s ease forwards;
+            background: #ffffff;
+            border-radius: var(--radius-2xl);
+            padding: 44px 40px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--gray-100);
+        }
+        .exam-panel.active {
+            display: block;
+        }
+        @keyframes fadeSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .exam-panel h3 {
+            font-size: 1.55rem;
+            color: var(--navy-800);
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        .exam-panel>p {
+            color: var(--gray-500);
+            line-height: 1.7;
+            margin-bottom: 28px;
+            font-size: 0.95rem;
+        }
+        .exam-resource-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+        .resource-card {
+            background: var(--gray-50);
+            padding: 24px 18px;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-xs);
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(200, 148, 62, 0.2);
+            background: #ffffff;
+        }
+        .resource-card .res-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 12px;
+            background: rgba(200, 148, 62, 0.08);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.25rem;
+            transition: var(--transition);
+        }
+        .resource-card:hover .res-icon {
+            background: var(--navy-800);
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+        .resource-card h4 {
+            font-size: 1rem;
+            color: var(--navy-800);
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+        .resource-card p {
+            font-size: 0.82rem;
+            color: var(--gray-500);
+            line-height: 1.5;
+        }
+
+        /* ── Testimonials ──────────────── */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .testimonial-card {
+            background: #ffffff;
+            padding: 36px 28px 30px;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid var(--gray-100);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: rgba(200, 148, 62, 0.18);
+        }
+        .testimonial-card .quote-mark {
+            font-size: 4rem;
+            font-family: 'Georgia', serif;
+            color: rgba(200, 148, 62, 0.1);
+            line-height: 1;
+            margin-bottom: -12px;
+            pointer-events: none;
+        }
+        .testimonial-text {
+            font-size: 0.93rem;
+            color: var(--gray-600);
+            line-height: 1.7;
+            flex-grow: 1;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .testimonial-author-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding-top: 16px;
+            border-top: 1px solid var(--gray-100);
+        }
+        .testimonial-avatar {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            background: var(--gray-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+        }
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .testimonial-author-row .author-name {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--navy-800);
+            letter-spacing: -0.01em;
+        }
+        .testimonial-author-row .author-role {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            line-height: 1.4;
+        }
+
+        /* ── CTA ───────────────────────── */
+        .cta-section {
+            background: var(--navy-900);
+            color: #ffffff;
+            text-align: center;
+            padding: 95px 0 100px;
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+        }
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 65% 50% at 30% 75%, rgba(200, 148, 62, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse 50% 55% at 72% 18%, rgba(200, 148, 62, 0.07) 0%, transparent 45%);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .cta-section .grid-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.02;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+            background-size: 44px 44px;
+            mask-image: radial-gradient(ellipse 75% 65% at 50% 50%, black 25%, transparent 65%);
+            -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 50%, black 25%, transparent 65%);
+        }
+        /* CTA top curve removed – sharp boundary now */
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .cta-content h2 {
+            color: #ffffff;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+        }
+        .cta-content p {
+            opacity: 0.85;
+            margin-bottom: 34px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ── Footer ────────────────────── */
+        .site-footer {
+            background: var(--navy-900);
+            color: #c8cdd6;
+            padding: 60px 0 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 44px;
+            margin-bottom: 44px;
+        }
+        .footer-brand h3 {
+            color: #ffffff;
+            font-size: 1.35rem;
+            margin-bottom: 14px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        .footer-brand p {
+            color: #9ba2af;
+            margin-bottom: 18px;
+            line-height: 1.7;
+            max-width: 360px;
+            font-size: 0.9rem;
+        }
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            color: #c8cdd6;
+            text-decoration: none;
+            transition: var(--transition-fast);
+            font-size: 0.95rem;
+        }
+        .social-links a:hover {
+            background: var(--gold);
+            color: #1a0e00;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(200, 148, 62, 0.35);
+        }
+        .footer-links-col h4 {
+            color: #ffffff;
+            font-size: 1rem;
+            margin-bottom: 16px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            position: relative;
+            display: inline-block;
+        }
+        .footer-links-col h4::after {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 3px;
+            background: var(--gold);
+            bottom: -6px;
+            left: 0;
+            border-radius: 3px;
+        }
+        .footer-links-col ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-links-col li {
+            margin-bottom: 10px;
+            color: #9ba2af;
+            font-size: 0.88rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .footer-links-col li i {
+            color: var(--gold-light);
+            font-size: 0.75rem;
+            width: 14px;
+            text-align: center;
+        }
+        .footer-links-col a {
+            color: #9ba2af;
+            text-decoration: none;
+            transition: var(--transition-fast);
+            font-size: 0.88rem;
+        }
+        .footer-links-col a:hover {
+            color: #ffffff;
+            padding-left: 3px;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            color: #8b9098;
+            font-size: 0.82rem;
+            letter-spacing: -0.01em;
+        }
+
+        /* ── Responsive ────────────────── */
+        @media (max-width: 1024px) {
+            .features-grid,
+            .exam-resource-grid,
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .about-visual {
+                order: -1;
+                max-width: 340px;
+                margin: 0 auto;
+            }
+            .about-card-stack {
+                aspect-ratio: 1 / 0.9;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+            .footer-brand {
+                grid-column: 1 / -1;
+            }
+            .stats-strip .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stat-block:nth-child(2)::before {
+                display: none;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero {
+                padding: 130px 0 70px;
+            }
+            .section {
+                padding: 64px 0;
+            }
+            .exam-tabs-nav {
+                max-width: 100%;
+                gap: 4px;
+                padding: 5px;
+            }
+            .exam-tab-btn {
+                padding: 11px 12px;
+                font-size: 0.82rem;
+            }
+            .exam-panel {
+                padding: 28px 16px;
+            }
+            .features-grid,
+            .exam-resource-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                max-width: 440px;
+                margin: 0 auto;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+            .footer-brand {
+                grid-column: auto;
+            }
+            .cta-section {
+                padding: 70px 0 75px;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+            .stats-strip .container {
+                grid-template-columns: 1fr 1fr;
+                border-radius: var(--radius-lg);
+            }
+            .stat-block+.stat-block::before {
+                display: none;
+            }
+            .stat-block:nth-child(odd)::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 15%;
+                width: 70%;
+                height: 1px;
+                background: var(--gray-100);
+            }
+            .header-register-btn {
+                padding: 8px 18px;
+                font-size: 0.8rem;
+            }
+            .logo-text {
+                font-size: 1rem;
+            }
+            .logo-img {
+                height: 32px;
+            }
+            .site-header.scrolled .logo-img {
+                height: 28px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.85rem;
+            }
+            .hero p {
+                font-size: 0.9rem;
+            }
+            .section-header h2 {
+                font-size: 1.6rem;
+            }
+            .cta-content h2 {
+                font-size: 1.55rem;
+            }
+            .stats-strip .container {
+                grid-template-columns: 1fr;
+            }
+            .stat-block+.stat-block {
+                border-top: 1px solid var(--gray-100);
+            }
+            .stat-block:nth-child(odd)::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ═══════════════ HEADER ═══════════════ -->
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo-link" aria-label="EduExam Hub Home">
+                    <img src="logo.jpg" alt="EduExam Hub Logo" class="logo-img">
+                    <span class="logo-text">EDUEXAM HUB</span>
+                </a>
+                <div class="header-actions">
+                    <a href="register.html" class="header-register-btn">
+                        <i class="fas fa-user-plus"></i>&nbsp; Register
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="home">
+        <div class="hero-grid-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">🇳🇬 Nigeria's Trusted Exam Prep Platform</span>
+                <h1>Ace Your <span class="highlight">WAEC, NECO &amp; JAMB</span> with Total Confidence</h1>
+                <p>Access world-class study resources, past questions, CBT simulations, and expert strategies trusted by thousands of Nigerian secondary school students.</p>
+                <div class="hero-buttons">
+                    <a href="register.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> Start Preparing Now — It's Free
+                    </a>
+                    <a href="#exams" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-chevron-down"></i> Explore Resources
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ STATS STRIP ═══════════════ -->
+    <section class="stats-strip">
+        <div class="container">
+            <div class="stat-block">
+                <div class="stat-number">15K+</div>
+                <div class="stat-label">Students Empowered</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-number">96%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-number">800+</div>
+                <div class="stat-label">Study Resources</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-number">12+</div>
+                <div class="stat-label">Years of Past Questions</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2>Your Trusted Exam Preparation Partner</h2>
+                <span class="section-underline"></span>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Built for Nigerian Students, by Expert Educators</h3>
+                    <p>EduExam Hub is Nigeria's most comprehensive online platform dedicated exclusively to WAEC, NECO, and JAMB preparation. Our team of seasoned educators and top-performing exam veterans has crafted every resource to align perfectly with the official syllabi and examination patterns.</p>
+                    <p>We combine deep curriculum knowledge with modern learning technology to deliver an experience that transforms how you prepare — making studying smarter, faster, and more effective.</p>
+                    <ul class="about-features-list">
+                        <li>
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            Syllabus-aligned content reviewed by subject experts
+                        </li>
+                        <li>
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            Realistic CBT simulations mirroring actual exam conditions
+                        </li>
+                        <li>
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            Detailed answer explanations and marking scheme insights
+                        </li>
+                        <li>
+                            <span class="check-icon"><i class="fas fa-check"></i></span>
+                            Mobile-optimized platform — study anytime, anywhere
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card-stack">
+                        <div class="about-floating-card card-main">                                                                                                                                                                                                                                                                                                                              
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FEATURES ═══════════════ -->
+    <section class="section section-alt" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2>Designed for Examination Excellence</h2>
+                <span class="section-underline"></span>
+            </div>
+            <p class="section-subtitle">Every feature is built with one goal — helping you score higher in WAEC, NECO, and JAMB.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-circle"><i class="fas fa-book-open"></i></div>
+                    <h3>Comprehensive Study Guides</h3>
+                    <p>In-depth, syllabus-specific guides covering every subject — from Mathematics and English to the Sciences and Commercial subjects.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-circle"><i class="fas fa-desktop"></i></div>
+                    <h3>CBT Exam Simulator</h3>
+                    <p>Practice under real exam conditions with our computer-based test simulator — built to match the exact JAMB UTME interface.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-circle"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Proven Exam Strategies</h3>
+                    <p>Time-tested techniques for time management, question analysis, and answer structuring that top scorers swear by.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-circle"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Performance Analytics</h3>
+                    <p>Identify your strengths and weaknesses with detailed progress tracking, so you know exactly where to focus.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-circle"><i class="fas fa-file-alt"></i></div>
+                    <h3>10+ Years of Past Questions</h3>
+                    <p>Extensive archive of real past questions (2010–2024) with step-by-step solutions and marking scheme references.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-circle"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Study On the Go</h3>
+                    <p>Fully mobile-responsive platform. Study wherever you are — at home, in the library, or on the bus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EXAM FOCUS ═══════════════ -->
+    <section class="section" id="exams">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Targeted Preparation</span>
+                <h2>Exam-Specific Resources</h2>
+                <span class="section-underline"></span>
+            </div>
+            <p class="section-subtitle">Choose your examination to access tailored study materials, past questions, and expert guidance.</p>
+
+            <div class="exam-tabs-nav" role="tablist">
+                <button class="exam-tab-btn active" data-exam="waec" role="tab">WAEC</button>
+                <button class="exam-tab-btn" data-exam="neco" role="tab">NECO</button>
+                <button class="exam-tab-btn" data-exam="jamb" role="tab">JAMB</button>
+            </div>
+
+            <!-- WAEC Panel -->
+            <div class="exam-panel active" id="waec-panel">
+                <h3>West African Examinations Council (WAEC)</h3>
+                <p>Comprehensive SSCE preparation with subject guides, past questions from 2010–2024, detailed marking schemes, and expert answering techniques for all core and elective subjects.</p>
+                <div class="exam-resource-grid">
+                    <div class="resource-card">
+                        <div class="res-icon"><i class="fas fa-file-alt"></i></div>
+                        <h4>Past Questions</h4>
+                        <p>10+ years with detailed solutions</p>
+                    </div>
+                    <div class="resource-card">
+                        <div class="res-icon"><i class="fas fa-book"></i></div>
+                        <h4>Subject Guides</h4>
+                        <p>Aligned with WAEC syllabus</p>
+                    </div>
+                    <div class="resource-card">
+                        <div class="res-icon"><i class="fas fa-clock"></i></div>
+                        <h4>Time Management</h4>
+                        <p>Strategies for exam day success</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NECO Panel -->
+            <div class="exam-panel" id="neco-panel">
+                <h3>National Examinations Council (NECO)</h3>
+                <p>Targeted NECO SSCE resources including subject tutorials, science practical guides, past papers, and techniques for excelling in both June/July and November/December series.</p>
+                <div class="exam-resource-grid">
+                    <div class="resource-card">
+                        <div class="res-icon"><i class="fas fa-flask"></i></div>
+                        <h4>Practical Guides</h4>
+                        <p>Step-by-step science practical prep</p>
+                    </div>
+                    <div class="resource-card">
+                        <div class="res-icon"><i class="fas fa-pencil-alt"></i></div>
+                        <h4>Answer Structuring</h4>
+                        <p>Maximize your marks in NECO</p>
+                    </div>
+                    <div class="resource-card">
+                        <div class="res-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h4>Exam Timetable</h4>
+                        <p>Strategic plans based on NECO schedule</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JAMB Panel -->
+            <div class="exam-panel" id="jamb-panel">
+                <h3>Joint Admissions &amp; Matriculation Board (JAMB)</h3>
+                <p>Complete UTME preparation with subject combinations, CBT practice tests, post-UTME guidance, and admission strategies for universities, polytechnics, and colleges of education across Nigeria.</p>
+                <div class="exam-resource-grid">
+                    <div class="resource-card">
+                        <div class="res-icon"><i class="fas fa-laptop"></i></div>
+                        <h4>CBT Simulator</h4>
+                        <p>Realistic computer-based test practice</p>
+                    </div>
+                    <div class="resource-card">
+                        <div class="res-icon"><i class="fas fa-university"></i></div>
+                        <h4>Admission Guide</h4>
+                        <p>Cut-off marks &amp; requirements</p>
+                    </div>
+                    <div class="resource-card">
+                        <div class="res-icon"><i class="fas fa-bolt"></i></div>
+                        <h4>Speed Drills</h4>
+                        <p>Answer faster with accuracy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+    <section class="section section-alt" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Success Stories</span>
+                <h2>Hear From Our Students</h2>
+                <span class="section-underline"></span>
+            </div>
+            <p class="section-subtitle">Real stories from Nigerian students who transformed their results with EduExam Hub.</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <div class="testimonial-text">
+                        Thanks to EduExam Hub's WAEC resources, I went from having 3 credits to scoring 7 A's and 2 B's. The study guides and past questions gave me exactly what I needed to crack the exam pattern.
+                    </div>
+                    <div class="testimonial-author-row">
+                        <div class="testimonial-avatar">
+                            <img src="faisal.jpg" alt="Faisal">
+                        </div>
+                        <div>
+                            <div class="author-name">Faisal</div>
+                            <div class="author-role">Medicine Student, FUHSA Azare</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <div class="testimonial-text">
+                        I struggled with Mathematics until I started using EduExam Hub's CBT simulator. The repeated practice helped me improve from a D7 in mocks to a B3 in NECO. I can't recommend it enough!
+                    </div>
+                    <div class="testimonial-author-row">
+                        <div class="testimonial-avatar">
+                            <img src="abubakar.jpg" alt="Mubarak Ibrahim">
+                        </div>
+                        <div>
+                            <div class="author-name">Mubarak Ibrahim</div>
+                            <div class="author-role">Software Engineering, ABU Zaria</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <div class="testimonial-text">
+                        My first JAMB score was 160. After practicing with EduExam Hub's CBT exams and past questions, I scored 230 and gained admission into Computer Science. The platform literally changed my life.
+                    </div>
+                    <div class="testimonial-author-row">
+                        <div class="testimonial-avatar">
+                            <img src="abdulwahab.jpg" alt="Abubakar Jafar">
+                        </div>
+                        <div>
+                            <div class="author-name">Abubakar Jafar</div>
+                            <div class="author-role">Computer Science, SAZU Bauchi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CTA ═══════════════ -->
+    <section class="cta-section">
+        <div class="grid-bg"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Results?</h2>
+                <p>Join over 15,000 Nigerian students already preparing smarter with EduExam Hub. Get instant access to everything you need for WAEC, NECO, and JAMB success.</p>
+                <a href="register.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-user-plus"></i> Register Now — It's Free
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>EduExam Hub</h3>
+                    <p>Nigeria's premier platform for WAEC, NECO, and JAMB exam preparation. Empowering secondary school students with world-class resources for academic excellence.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Exam Resources</h4>
+                    <ul>
+                        <li><a href="#exams">WAEC Materials</a></li>
+                        <li><a href="#exams">NECO Guides</a></li>
+                        <li><a href="#exams">JAMB Preparation</a></li>
+                        <li><a href="#features">Study Features</a></li>
+                        <li><a href="#testimonials">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+                        <li><i class="fas fa-envelope"></i> info@eduexamhub.com</li>
+                        <li><i class="fas fa-phone"></i> +234 801 234 5678</li>
+                        <li><i class="fas fa-clock"></i> Mon–Fri: 9AM–6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduExam Hub. All Rights Reserved. | Empowering Nigerian Students for Exam Success</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const header = document.getElementById('siteHeader');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    var targetId = this.getAttribute('href');
+                    if (targetId === '#' || !targetId) return;
+                    var targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        e.preventDefault();
+                        var headerHeight = header.offsetHeight;
+                        var targetPos = targetEl.getBoundingClientRect().top + window
+                            .pageYOffset - headerHeight - 12;
+                        window.scrollTo({ top: targetPos, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // Exam tabs
+            var tabButtons = document.querySelectorAll('.exam-tab-btn');
+            var panels = document.querySelectorAll('.exam-panel');
+            tabButtons.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var examType = this.getAttribute('data-exam');
+                    tabButtons.forEach(function(b) { b.classList.remove('active'); });
+                    panels.forEach(function(p) { p.classList.remove('active'); });
+                    this.classList.add('active');
+                    var targetPanel = document.getElementById(examType + '-panel');
+                    if (targetPanel) targetPanel.classList.add('active');
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
